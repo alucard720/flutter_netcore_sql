@@ -39,3 +39,37 @@ Widget signupcontainer({required String st}) {
     ),
   );
 }
+
+//rich text
+
+TextSpan RichTextSpan({required String one, required String two}) {
+  return TextSpan(children: [
+    TextSpan(
+        text: one,
+        style: TextStyle(fontSize: 13, color: AppColors.kBlackColor)),
+    TextSpan(
+        text: two, style: TextStyle(fontSize: 13, color: AppColors.kBlueColor))
+  ]);
+}
+
+//TextField
+
+Widget customtextfield({required String lone, required String htwo}) {
+  return TextField(
+    decoration: InputDecoration(
+        labelText: lone,
+        hintText: htwo,
+        hintStyle: const TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 17,
+        ),
+        border: const OutlineInputBorder(
+            borderSide: BorderSide(
+          width: 5,
+          color: AppColors.kDarkblack,
+          style: BorderStyle.solid,
+        ))),
+    autofocus: true,
+    keyboardType: TextInputType.multiline,
+  );
+}

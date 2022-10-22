@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_netcore_sql/screens/home_screen.dart';
 import 'package:flutter_netcore_sql/screens/login_page.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'FLUTTER-NETCORE-SQL',
       theme: ThemeData(),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
