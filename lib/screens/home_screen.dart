@@ -43,7 +43,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         child: inkwellbuttons(
-                            image: Image.asset("image/img3.png")),
+                            image: Image.asset("images/img3.png")),
+                        onTap: () {},
+                      ),
+                      const SizedBox(width: 37),
+                      InkWell(
+                        child: inkwellbuttons(
+                            image: Image.asset("images/img4.png")),
                       )
                     ],
                   )
