@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/coderefactors.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -17,7 +19,7 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    customText(
+                    customtext(
                         txt: "Login Now",
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
