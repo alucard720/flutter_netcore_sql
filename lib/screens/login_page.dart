@@ -106,7 +106,7 @@ class _loginscreenState extends State<loginscreen> {
                           child: signupcontainer(st: "Acceder"),
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => const WelcomeScreen()));
+                                builder: (context) => const welcomescreen()));
                           },
                         ),
                         const SizedBox(
