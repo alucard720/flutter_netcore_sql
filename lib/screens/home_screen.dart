@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   customtext(
                       txt: "Favor acceda para continuar con la aplicacion",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 14,
                       )),
@@ -50,8 +50,41 @@ class _HomeScreenState extends State<HomeScreen> {
                       InkWell(
                         child: inkwellbuttons(
                             image: Image.asset("images/img4.png")),
+                        onTap: () {},
                       )
                     ],
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  customtext(
+                      txt: "o acceda con el correo",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.normal,
+                        fontSize: 14,
+                      )),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  InkWell(
+                    child: signupcontainer(st: "Acceder"),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const signupscreen()));
+                    },
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  InkWell(
+                    child: RichText(
+                      text:
+                          RichTextSpan(one: "No tiene cuenta", two: "Acceder"),
+                    ),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => loginscreen()));
+                    },
                   )
                 ],
               ),
