@@ -26,7 +26,7 @@ Widget signupcontainer({required String st}) {
     width: double.infinity,
     height: 60,
     decoration: BoxDecoration(
-      color: AppColors.kwhiteColor,
+      color: AppColors.kBlueColor,
       borderRadius: BorderRadius.circular(12),
     ),
     child: Center(
@@ -46,9 +46,10 @@ TextSpan RichTextSpan({required String one, required String two}) {
   return TextSpan(children: [
     TextSpan(
         text: one,
-        style: TextStyle(fontSize: 13, color: AppColors.kBlackColor)),
+        style: const TextStyle(fontSize: 13, color: AppColors.kBlackColor)),
     TextSpan(
-        text: two, style: TextStyle(fontSize: 13, color: AppColors.kBlueColor))
+        text: two,
+        style: const TextStyle(fontSize: 13, color: AppColors.kBlueColor))
   ]);
 }
 

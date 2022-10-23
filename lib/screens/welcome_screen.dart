@@ -17,19 +17,19 @@ class _welcomescreenState extends State<welcomescreen> {
           padding: const EdgeInsets.only(top: 44),
           child: Column(
             children: [
-              const Image(image: AssetImage("images/image2.png")),
+              const Image(image: AssetImage("images/img2.png")),
               const SizedBox(
                 height: 48,
               ),
               customtext(
                   txt: "Gracias",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
                   )),
               const SizedBox(height: 8),
               customtext(
-                  txt: "Ahora,Bienvenidos al Minerd ",
+                  txt: "Bienvenidos al MINERD ",
                   style: const TextStyle(
                       fontSize: 14, fontWeight: FontWeight.normal)),
               const SizedBox(

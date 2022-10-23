@@ -39,6 +39,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   const SizedBox(
                     height: 30,
                   ),
+                  Image.asset("images/Logo.png"),
+                  const SizedBox(
+                    height: 30,
+                  ),
                   Row(
                     children: [
                       InkWell(
@@ -78,8 +82,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   InkWell(
                     child: RichText(
-                      text:
-                          RichTextSpan(one: "No tiene cuenta", two: "Acceder"),
+                      text: RichTextSpan(
+                          one: "No tiene cuenta", two: "  Acceder Aqui"),
                     ),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(

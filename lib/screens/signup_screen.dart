@@ -1,8 +1,3 @@
-import 'dart:io';
-
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_netcore_sql/utils/exports.dart';
 
 class signupscreen extends StatefulWidget {
@@ -30,7 +25,7 @@ class _signupscreenState extends State<signupscreen> {
                 children: <Widget>[
                   customtext(
                       txt: "Acceder",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 26,
                       )),

@@ -25,7 +25,7 @@ class _loginscreenState extends State<loginscreen> {
                       children: <Widget>[
                         customtext(
                             txt: "acceder ahora",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 26,
                             )),
@@ -34,7 +34,7 @@ class _loginscreenState extends State<loginscreen> {
                         ),
                         customtext(
                             txt: "Porfavor acceder para continuar",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.normal,
                               fontSize: 24,
                             )),
@@ -61,7 +61,7 @@ class _loginscreenState extends State<loginscreen> {
                         ),
                         customtext(
                             txt: "o acceder con correo",
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
                             )),
@@ -89,7 +89,7 @@ class _loginscreenState extends State<loginscreen> {
                                 );
                               },
                             ),
-                            Spacer(),
+                            const Spacer(),
                             const TextButton(
                               onPressed: null,
                               child: Text(
