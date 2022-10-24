@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   customtext(
-                      txt: "Bienvenido",
+                      txt: "Bienvenidos",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 26,
@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 8,
                   ),
                   customtext(
-                      txt: "Favor acceda para continuar con la aplicacion",
+                      txt: "Favor acceder para continuar con la Aplicacion",
                       style: const TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 14,
@@ -67,14 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontWeight: FontWeight.normal,
                         fontSize: 14,
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   InkWell(
                     child: signupcontainer(st: "Acceder"),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const signupscreen()));
+                          builder: (context) => const loginscreen()));
                     },
                   ),
                   const SizedBox(
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => loginscreen()));
+                          builder: (context) => const signupscreen()));
                     },
                   )
                 ],

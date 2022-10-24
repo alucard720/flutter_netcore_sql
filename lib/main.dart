@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_netcore_sql/screens/home_screen.dart';
-import 'package:flutter_netcore_sql/screens/login_page.dart';
 
 void main() {
   runApp(const MyApp());

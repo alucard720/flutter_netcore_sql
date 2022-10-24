@@ -42,7 +42,10 @@ class _welcomescreenState extends State<welcomescreen> {
                 ),
                 child: InkWell(
                   child: signupcontainer(st: "vamos"),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const HomeScreen()));
+                  },
                 ),
               )
             ],

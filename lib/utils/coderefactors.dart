@@ -11,7 +11,7 @@ Widget customtext({required String txt, required TextStyle style}) {
 
 Widget inkwellbuttons({required Image image}) {
   return Expanded(
-    child: Container(
+    child: SizedBox(
       width: 170,
       height: 60,
       child: image,

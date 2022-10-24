@@ -42,7 +42,7 @@ class _signupscreenState extends State<signupscreen> {
                     height: 60,
                   ),
                   customtext(
-                      txt: "Accede atres redes sociales",
+                      txt: "Accede por redes sociales",
                       style: const TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 14,
@@ -69,13 +69,13 @@ class _signupscreenState extends State<signupscreen> {
                     height: 50,
                   ),
                   customtext(
-                      txt: "o Acceder por correo",
+                      txt: "O por correo",
                       style: const TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 14,
                       )),
                   const SizedBox(height: 30),
-                  customtextfield(lone: "Email", htwo: "Emil"),
+                  customtextfield(lone: "Correo", htwo: "Correo"),
                   const SizedBox(height: 20),
                   customtextfield(lone: "Password", htwo: "Password"),
                   const SizedBox(height: 20),
@@ -87,19 +87,22 @@ class _signupscreenState extends State<signupscreen> {
                           setState(() {
                             _value = newValue!;
                           });
-                          const Text(
-                            "Rcuerdame",
-                            style: TextStyle(
-                                fontSize: 13, color: AppColors.kBlackColor),
-                          );
                         },
+                      ),
+                      const Text(
+                        "Recuerdame",
+                        style: TextStyle(
+                            fontSize: 13, color: AppColors.kBlackColor),
                       ),
                     ],
                   ),
                   const SizedBox(height: 40),
                   InkWell(
-                    child: signupcontainer(st: "acceder"),
-                    onTap: () {},
+                    child: signupcontainer(st: "Entrar"),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const welcomescreen()));
+                    },
                   ),
                   const SizedBox(
                     height: 50,
@@ -107,7 +110,7 @@ class _signupscreenState extends State<signupscreen> {
                   InkWell(
                     child: RichText(
                       text: RichTextSpan(
-                          one: "ya tienes una cuenta", two: "Acceder"),
+                          one: "ya tienes una cuenta", two: " Acceder"),
                     ),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(

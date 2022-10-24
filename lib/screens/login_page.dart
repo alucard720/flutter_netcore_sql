@@ -33,7 +33,7 @@ class _loginscreenState extends State<loginscreen> {
                           height: 8,
                         ),
                         customtext(
-                            txt: "Porfavor acceder para continuar",
+                            txt: "Por favor acceder para continuar",
                             style: const TextStyle(
                               fontWeight: FontWeight.normal,
                               fontSize: 24,
@@ -81,13 +81,14 @@ class _loginscreenState extends State<loginscreen> {
                                 setState(() {
                                   _value = newValue!;
                                 });
-                                const Text(
-                                  "Recordarme",
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      color: AppColors.kBlackColor),
-                                );
                               },
+                            ),
+                            const Text(
+                              "Recuerdame",
+                              style: TextStyle(
+                                color: AppColors.kBlackColor,
+                                fontSize: 13,
+                              ),
                             ),
                             const Spacer(),
                             const TextButton(
