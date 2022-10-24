@@ -14,13 +14,14 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         body: SingleChildScrollView(
             child: Padding(
-          padding: const EdgeInsets.only(top: 13),
+          padding: const EdgeInsets.only(top: 15),
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+<<<<<<< HEAD
                   customtext(
                       txt: "Bienvenidos",
                       style: const TextStyle(
@@ -38,16 +39,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       )),
                   const SizedBox(
                     height: 30,
+=======
+                  const SizedBox(
+                    height: 40,
+>>>>>>> 4827466860648d0482e4070ddbe06ba1cd63f0fd
                   ),
                   Image.asset("images/Logo.png"),
                   const SizedBox(
-                    height: 30,
+                    height: 60,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       InkWell(
                         child: inkwellbuttons(
-                            image: Image.asset("images/img3.png")),
+                          image: Image.asset(
+                            "images/img3.png",
+                            width: 20,
+                            height: 20,
+                          ),
+                        ),
                         onTap: () {},
                       ),
                       const SizedBox(width: 37),
@@ -59,12 +70,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   const SizedBox(
-                    height: 50,
+                    height: 60,
                   ),
                   customtext(
                       txt: "o acceda con el correo",
                       style: const TextStyle(
-                        fontWeight: FontWeight.normal,
+                        fontWeight: FontWeight.bold,
                         fontSize: 14,
                       )),
                   const SizedBox(
