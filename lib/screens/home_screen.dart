@@ -14,36 +14,22 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         body: SingleChildScrollView(
             child: Padding(
-          padding: const EdgeInsets.only(top: 13),
+          padding: const EdgeInsets.only(top: 25),
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  customtext(
-                      txt: "Bienvenido",
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 26,
-                      )),
                   const SizedBox(
-                    height: 8,
-                  ),
-                  customtext(
-                      txt: "Favor acceda para continuar con la aplicacion",
-                      style: const TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 14,
-                      )),
-                  const SizedBox(
-                    height: 30,
+                    height: 40,
                   ),
                   Image.asset("images/Logo.png"),
                   const SizedBox(
-                    height: 30,
+                    height: 60,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       InkWell(
                         child: inkwellbuttons(
@@ -59,12 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   const SizedBox(
-                    height: 50,
+                    height: 60,
                   ),
                   customtext(
                       txt: "o acceda con el correo",
                       style: const TextStyle(
-                        fontWeight: FontWeight.normal,
+                        fontWeight: FontWeight.bold,
                         fontSize: 14,
                       )),
                   SizedBox(
