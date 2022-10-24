@@ -27,7 +27,7 @@ class _signupscreenState extends State<signupscreen> {
             child: Center(
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[

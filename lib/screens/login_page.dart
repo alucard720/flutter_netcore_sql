@@ -26,7 +26,7 @@ class _loginscreenState extends State<loginscreen> {
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 15, horizontal: 15),
+                          vertical: 15, horizontal: 5),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
@@ -34,9 +34,9 @@ class _loginscreenState extends State<loginscreen> {
                             height: 8,
                           ),
                           customtext(
-                              txt: "Porfavor acceder para continuar",
+                              txt: "Favor acceder para continuar",
                               style: const TextStyle(
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 24,
                               )),
                           const SizedBox(
@@ -98,7 +98,8 @@ class _loginscreenState extends State<loginscreen> {
                                 child: Text(
                                   "Olvide Contrasena",
                                   style: TextStyle(
-                                    fontSize: 15,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -119,7 +120,7 @@ class _loginscreenState extends State<loginscreen> {
                             child: RichText(
                               text: RichTextSpan(
                                   one: "No tienes Cuenta?",
-                                  two: "Registrate aqui"),
+                                  two: " Registrate aqui"),
                             ),
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(

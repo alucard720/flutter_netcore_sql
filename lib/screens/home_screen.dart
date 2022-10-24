@@ -14,10 +14,10 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         body: SingleChildScrollView(
             child: Padding(
-          padding: const EdgeInsets.only(top: 25),
+          padding: const EdgeInsets.only(top: 15),
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -33,7 +33,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       InkWell(
                         child: inkwellbuttons(
-                            image: Image.asset("images/img3.png")),
+                          image: Image.asset(
+                            "images/img3.png",
+                            width: 20,
+                            height: 20,
+                          ),
+                        ),
                         onTap: () {},
                       ),
                       const SizedBox(width: 37),
